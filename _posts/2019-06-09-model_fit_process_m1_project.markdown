@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Model fit process (M1 project)"
-date:       2019-06-09 18:28:33 +0000
+date:       2019-06-09 14:28:34 -0400
 permalink:  model_fit_process_m1_project
 ---
 

@@ -67,7 +67,7 @@ Thus, the final scenarios for the next step contained 50 and 21 variables for sc
 
 At this stage, the linear regression is calculated using the train_test_split function contained in the `sklearn.model_selection` module.  The purpose of this stage is to determine the train/test proportion level at which, on the one hand, regression quality indicators are optimal, on the other hand, the difference between these indicators for a train set and test set is minimal.  The implementation of the algorithm, as before, was carried out on the basis of loops with an enumeration of the train portion from 10% to 30% with step of 5% (6 iterations in total).  Figure 3 shows the results of calculations: on the left graph - the R-squared adjusted indicator, on the right - MSE (already in the form of positive values).  Both graphs show calculations on a test set.
  
-![](https://imgur.com/P1jJBKB.png)
+![](https://imgur.com/g41BBpC.png)
 
 Figure 3. TTS results  
 
@@ -87,7 +87,7 @@ Table 2. Optimal K in TTS
 
    The essence of this stage is to generate and test residuals of the selected regression model on the properties of the normal distribution, the zero value of the expectation, and the absence of heteroscedasticity of the variance.
  
- ![](https://imgur.com/g41BBpC.png)
+ ![](https://imgur.com/0qt9fg9.png)
 
 Figure 4. Residuals. Case 2 (21 features)  
 

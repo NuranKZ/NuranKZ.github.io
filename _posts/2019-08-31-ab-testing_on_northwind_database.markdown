@@ -60,7 +60,8 @@ As part of the additional hypothesis, I asked myself what could affect the delay
 There are only three suppliers in the database: Federal Shipping, Speedy Express and United Packages, with portions of 31%, 30% and 39% of the total order volume, respectively, i.e. the proportions between them are roughly evenly distributed. 
 
 The general zero hypothesis for testing the difference is as follows:  
-**Ho: E(Delay | Federal Shipping) = E(Delay | Speedy Express) = E(Delay | United Packages)**
+
+Ho: E(Delay | Federal Shipping) = E(Delay | Speedy Express) = E(Delay | United Packages)
 
 Taking into account that the standard AB-test works with only two samples, such a hypothesis splits into 3 separate hypotheses comparing the corresponding sub-samples in pairs. The total number of such hypotheses is equal to the number of combinations of 3 by 2, equal to 3.
 

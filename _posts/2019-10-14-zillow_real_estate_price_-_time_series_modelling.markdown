@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Zillow Real Estate Price - time series modelling"
-date:       2019-10-14 15:40:28 +0000
+date:       2019-10-14 11:40:28 -0400
 permalink:  zillow_real_estate_price_-_time_series_modelling
 ---
 
@@ -38,7 +38,7 @@ As you can see, based on the visual representation, the graphs are similar to ea
 I conducted the simulation itself according to the following scheme:
 1. In the first step, I selected the optimal SARIMA parameters based on the regionally averaged time series (on an annual basis). In particular, I had parameters (0, 1, 1, 1) (0, 1, 1, 1)
 2. In the second step of the loop by region, I am taking into account the parameters set to create and fit a separate model for each region.
-3. In the third step, I left in the sample only the models of the regions with the AIC estimation higher than AIC according to the averaged price model and calculated IRR indicators for them.
+3. In the third step, I left in the sample only the models of the regions with the AIC estimation lower than AIC according to the averaged price model and calculated IRR indicators for them.
 4. The final step was the ranking procedure.  
 
 After receiving the results of modelling and ranking, I decided to ask myself the question that maybe annual resizing was quite an extreme step and decided to test it additionally. In Fig.3 and Fig.4 you can see the histograms of residuals for annual and monthly models respectively. As you can see, the distribution of residuals of the annual model is closer to N(0.1) than that of the monthly model. Perhaps the reason for this is not the best selection of parameters for the monthly model (I used the found optimums (1,2,2,2)(2,2,2,12)).

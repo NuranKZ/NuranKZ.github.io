@@ -1,15 +1,18 @@
 ---
 layout: post
 title:      "Short-term and Long-term forecasts"
-date:       2020-04-05 13:15:00 +0000
+date:       2020-04-05 09:15:01 -0400
 permalink:  short-term_and_long-term_forecasts
 ---
 
 
+Hi!
+
 The topic of this short post is devoted to the use of recursive neural networks for forecasting of share quotations.
 As part of my capstone project I was engaged in building ARIMA and LSTM models to create predictive models. In this post, I will build short and long term forecasts charts based on LSTM models.
 
-#### Evaluation parameters
+**1. Evaluation parameters**
+
 Before we proceed to the results, I would like to say a few words about how this curve will be built.
 
 **Data to be used**
@@ -39,7 +42,8 @@ The following optimal architectures were found for model training
 - Window size = 90: LSTM(128, ReLU) - DropOut(0.10) - FC(1)
 
 
-#### Analysis results
+**2. Analysis results**
+
 Let's have a look at the forecast charts for each variant of the window.
 
 ![Imgur](https://i.imgur.com/9SR6DiT.png?2)
